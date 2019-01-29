@@ -47,6 +47,7 @@ var orm = {
       cb(result);
     });
   },
+  
   createOne: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
@@ -67,7 +68,7 @@ var orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: panther, sleepy: true}
+
   updateOne: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 
